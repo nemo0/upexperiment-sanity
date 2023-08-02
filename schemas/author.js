@@ -27,6 +27,19 @@ export default defineType({
         hotspot: true,
       },
     }),
+    {
+      title: 'Social Handles',
+      name: 'socials',
+      type: 'object',
+      fields: [
+        {name: 'instagram', type: 'url', title: 'Instagram'},
+        {name: 'twitter', type: 'url', title: 'Twitter'},
+        {name: 'facebook', type: 'url', title: 'Facebook'},
+        {name: 'github', type: 'url', title: 'Github'},
+        {name: 'linkedin', type: 'url', title: 'LinkedIn'},
+        {name: 'website', type: 'url', title: 'Other Website'},
+      ],
+    },
     defineField({
       name: 'bio',
       title: 'Bio',
@@ -40,6 +53,37 @@ export default defineType({
         },
       ],
     }),
+
+    // defineField({
+    //   name: 'instagram',
+    //   title: 'Instagram',
+    //   type: 'url',
+    // }),
+    // defineField({
+    //   name: 'twitter',
+    //   title: 'Twitter',
+    //   type: 'url',
+    // }),
+    // defineField({
+    //   name: 'facebook',
+    //   title: 'Facebook',
+    //   type: 'url',
+    // }),
+    // defineField({
+    //   name: 'linkedin',
+    //   title: 'LinkedIn',
+    //   type: 'url',
+    // }),
+    // defineField({
+    //   name: 'github',
+    //   title: 'Github',
+    //   type: 'url',
+    // }),
+    // defineField({
+    //   name: 'website',
+    //   title: 'Other Website',
+    //   type: 'url',
+    // }),
   ],
   preview: {
     select: {
