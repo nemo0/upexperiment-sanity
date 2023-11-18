@@ -20,6 +20,11 @@ export default defineType({
       },
     }),
     defineField({
+      title: 'Subtitle',
+      name: 'subtitle',
+      type: 'string',
+    }),
+    defineField({
       title: 'Color',
       description: 'Pick color',
       name: 'color',
